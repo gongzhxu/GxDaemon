@@ -1,0 +1,2 @@
+# GxDaemon
+linux daemon
