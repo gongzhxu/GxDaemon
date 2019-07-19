@@ -143,14 +143,9 @@ static void HandleSignal(int signo)
     {
         if(g_child_pid != 0)
         {
-            printf("\nBegin killing child program=%d\n", g_child_pid);
             kill(g_child_pid, SIGTERM);
         }
-        else
-        {
-            printf("\nChild program not running\n");
-        }
- 
+	    
         exit(0);
     }
 }
