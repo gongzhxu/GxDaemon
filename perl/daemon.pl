@@ -65,7 +65,7 @@ exec $cmd;
 
 sub interrupt
 {
-	my $pid = @_;
+	(my $pid) = @_;
 	print("killing the program $program!!!\n");
 	if($pid > 0)
 	{
